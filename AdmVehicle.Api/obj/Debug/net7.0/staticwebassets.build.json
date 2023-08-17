@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "fsA7YjQlaCOyFlXHjzmDP21eP9XhvVRUSZgY24k/T1s=",
+  "Source": "AdmVehicle.Api",
+  "BasePath": "_content/AdmVehicle.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
