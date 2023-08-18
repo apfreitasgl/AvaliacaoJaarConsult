@@ -14,7 +14,7 @@ export class VeiculoService {
 
 
   consultarDadosveiculo(codFipe: string, ano: number): Observable<Veiculo> {
-    return this.http.post<Veiculo>(environment.apiUrlV1 + `Vehicle?codeFipe=${codFipe}&yearVehicle=${ano}`,null);
+    return this.http.post<Veiculo>(environment.apiUrlV1 + `Vehicle/VehicleDetailsInFipeTableAsync?codeFipe=${codFipe}&yearVehicle=${ano}`,null);
   }
 
   
