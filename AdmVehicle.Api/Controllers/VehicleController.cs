@@ -20,16 +20,16 @@ namespace AdmVehicle.Api.Controllers
         }
 
         [HttpPost(Name = "PostVehicle")]
-        public async Task<IActionResult> VehicleDetailsInFipeTable(string codeFipe, int yearVehicle)
+        public async Task<IActionResult> VehicleDetailsInFipeTableAsync(string codeFipe, int yearVehicle = 0)
         {
-            var options = new RestClientOptions("https://brasilapi.com.br/")
-            {
-                //Authenticator = new HttpBasicAuthenticator("username", "password")
-            };
+            var options = new RestClientOptions("https://brasilapi.com.br/");
             var client = new RestClient(options);
             var request = new RestRequest($"api/fipe/preco/v1/{codeFipe}");
             var response = await client.GetAsync(request);
-            var veiculos = JsonConvert.DeserializeObject<List<Vehicle>>(response.Content).Where(x => x.AnoModelo == yearVehicle); 
+            var veiculos = JsonConvert.DeserializeObject<List<Vehicle>>(response.Content);
+
+            if (yearVehicle != 0)
+                veiculos = veiculos.Where(x => x.AnoModelo == yearVehicle).ToList();
 
             return Ok(veiculos);
         }
