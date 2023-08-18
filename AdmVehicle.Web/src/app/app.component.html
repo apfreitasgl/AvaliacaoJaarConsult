@@ -1,0 +1,22 @@
+<div class="container text-left">
+  <div class="row">
+    <div *ngIf="veiculos.length">
+        {{ veiculos | json }}
+    </div>
+    <div class="col-md-2 col-ofse">
+      <form [formGroup]="form" (submit)="consultar()">
+        <div class="mb-3">
+          <label for="codFipe" class="form-label">Codigo Fipe</label>
+          <input formControlName="codFipe" type="text" class="form-control" id="codFipe">
+        </div>
+        <div class="mb-3">
+          <label for="ano" class="form-label">Ano</label>
+          <input formControlName="ano" type="email" class="form-control" id="ano" >
+        </div>
+        <div class="col-md-12 mt-2" style="text-align: right;">
+          <button type="submit" class="btn btn-primary">Consultar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

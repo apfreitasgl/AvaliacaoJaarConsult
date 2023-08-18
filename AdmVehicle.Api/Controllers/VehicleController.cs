@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace AdmVehicle.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class VehicleController : ControllerBase
     {
 

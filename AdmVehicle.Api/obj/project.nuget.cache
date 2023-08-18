@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "M2iG/2feYpa2EIy/kNuwDRa1twbv7nSDunDQkkUfIcAYbAAQGFGH1d5OvhXCTFnaJFI/wGWYu3VCayAb0UqqJQ==",
+  "dgSpecHash": "U+U37D/f9TvWomz3sQi+1A/e8H0wnQecjKWEKiflLEpoBJ5Rbh06kPvhulyqOZ72S4+Uk+EmURMqvdvT+KiLVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\apfre\\Desktop\\AvaliacaoJaarConsult\\AdmVehicle\\AvaliacaoJaarConsult\\AdmVehicle.Api\\AdmVehicle.Api.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\apfre\\Desktop\\AvaliacaoJaarConsult\\AvaliacaoJaarConsult\\AdmVehicle.Api\\AdmVehicle.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\apfre\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\apfre\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
