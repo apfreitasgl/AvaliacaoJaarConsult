@@ -1,13 +1,23 @@
-# AvaliacaoJaarConsult
-repositorio para construção de de avaliação para a empresa Jaar Consult
-
+# AVALIAÇÃO JAAR CONSULT
+	Repositorio para construção de de avaliação para a empresa Jaar Consult
 
 # COMO RODAR AS APLICAÇÕES
-
+	-Ao entrar na pasta do projeto .Net "AdmVehicle.Api" rodar os comandos de Migrations abaixo e após rodar o projeto com o Visual Studio
+	    	Update-Database -Verbose
+	-Ao entrar na pasta do projeto angular "AdmVehicle.Web" rodar os comandos
+         	npm i
+		ng serve --open
+  
 # TECNOLOGIAS E FRAMEWORKS USADOS
 	- Angular versão 16
-	- .Net 7.0.9
+	- .Net Framework 7.0.9
+ 	- Bootstrap versão 5.3.1
 	
-# CONSIDERAÇÕES
-	- Foi optado por usar inglês na construção do software apesar da API https://brasilapi.com.br usar português
 # POSSÍVEIS EVOLUÇÕES
+	- A principio foi construido um monolito, mas no decorrer da evolução do projeto podemos separar melhor as responsabilidades através da implantação de uma Arquitetura limpa (Clean Architecture)
+ 	divida em varios projetos que tratem separadamente o Banco de dados, Injeção de dependência, API, etc;
+  	- Pode-se colocar Fluent Validation para validarmos as entradas de Requisição
+   	- Podemos customizar os retornos de forma a devolver status codes mais bem elaborados
+    
+# CONSIDERAÇÕES
+	- Foi optado por usar inglês na construção do software no inicio mas depois mudei e decidi usar português mesmo devido a API https://brasilapi.com.br usar português
