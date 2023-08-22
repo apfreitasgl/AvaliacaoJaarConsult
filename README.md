@@ -10,3 +10,4 @@ repositorio para construção de de avaliação para a empresa Jaar Consult
 	
 # CONSIDERAÇÕES
 	- Foi optado por usar inglês na construção do software apesar da API https://brasilapi.com.br usar português
+# POSSÍVEIS EVOLUÇÕES
