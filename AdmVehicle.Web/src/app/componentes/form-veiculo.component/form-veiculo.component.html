@@ -1,0 +1,112 @@
+<div class="card col-md-12 d-inline-block p-2 mt-1" *ngFor="let veiculo of veiculos">
+    <div class="card-body">
+        <form [formGroup]="form" (submit)="submeter()">
+            <input formControlName="id" [ngModel]="veiculo.id" type="text" class="form-control d-none" id="id">
+            <div class="form-group row">
+                <label for="valor" class="col-md-6 col-form-label">Valor</label>
+                <div class="col-md-6">
+                    <input formControlName="valor" [ngModel]="veiculo.valor" type="text"
+                        class="form-control  {{habilitaEdicao ? '' : 'd-none'}}" id="valor">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext" id="valor"
+                        value="{{veiculo.valor}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="modelo" class="col-md-6 col-form-label">Marca</label>
+                <div class="col-md-6">
+                    <input formControlName="marca" [ngModel]="veiculo.marca" type="text"
+                        class="form-control {{habilitaEdicao ? '' : 'd-none'}}" id="marca">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext" id="marca"
+                        value="{{veiculo.marca}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="modelo" class="col-md-6 col-form-label">Modelo</label>
+                <div class="col-md-6">
+                    <input formControlName="modelo" [ngModel]="veiculo.modelo" type="text"
+                        class="form-control {{habilitaEdicao ? '' : 'd-none'}}" id="modelo">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext" id="modelo"
+                        value="{{veiculo.modelo}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="anoModelo" class="col-md-6 col-form-label">Ano do modelo</label>
+                <div class="col-md-6">
+                    <input formControlName="anoModelo" [ngModel]="veiculo.anoModelo" type="text"
+                        class="form-control {{habilitaEdicao ? '' : 'd-none'}}" id="anoModelo">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext" id="anoModelo"
+                        value="{{veiculo.anoModelo}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="combustivel" class="col-md-6 col-form-label">Combustivel</label>
+                <div class="col-md-6">
+                    <input formControlName="combustivel" [ngModel]="veiculo.combustivel" type="text"
+                        class="form-control {{habilitaEdicao ? '' : 'd-none'}}" id="combustivel">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext" id="combustivel"
+                        value="{{veiculo.combustivel}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="codigoFipe" class="col-md-6 col-form-label">Codigo Fipe</label>
+                <div class="col-md-6">
+                    <input formControlName="codigoFipe" [ngModel]="veiculo.codigoFipe" type="text"
+                        class="form-control {{habilitaEdicao ? '' : 'd-none'}}" id="codigoFipe">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext" id="codigoFipe"
+                        value="{{veiculo.codigoFipe}}">
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="mesReferencia" class="col-md-6 col-form-label">Mes referência</label>
+                <div class="col-md-6">
+                    <input formControlName="mesReferencia" [ngModel]="veiculo.mesReferencia" type="text"
+                        class="form-control {{habilitaEdicao ? '' : 'd-none'}}" id="mesReferencia">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext"
+                        id="mesReferencia" value="{{veiculo.mesReferencia}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="tipoVeiculo" class="col-md-6 col-form-label">Tipo veículo</label>
+                <div class="col-md-6">
+                    <input formControlName="tipoVeiculo" [ngModel]="veiculo.tipoVeiculo" type="text"
+                        class="form-control {{habilitaEdicao ? '' : 'd-none'}}" id="tipoVeiculo">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext" id="tipoVeiculo"
+                        value="{{veiculo.tipoVeiculo}}">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="siglaCombustivel" class="col-md-6 col-form-label">Sigla combustivel</label>
+                <div class="col-md-6">
+                    <input formControlName="siglaCombustivel" [ngModel]="veiculo.siglaCombustivel" type="text"
+                        class="form-control {{habilitaEdicao ? '' : 'd-none'}}" id="siglaCombustivel">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext"
+                        id="siglaCombustivel" value="{{veiculo.siglaCombustivel}}">
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="dataConsulta" class="col-md-6 col-form-label">Data da consulta</label>
+                <div class="col-md-6">
+                    <input formControlName="dataConsulta" [ngModel]="veiculo.dataConsulta" type="text"
+                        class="form-control {{habilitaEdicao ? '' : 'd-none'}}" id="dataConsulta">
+                    <input *ngIf="!habilitaEdicao" type="text" readonly class="form-control-plaintext" id="dataConsulta"
+                        value="{{veiculo.dataConsulta}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="placa" class="col-md-6 col-form-label">Placa</label>
+                <div class="col-md-6">
+                    <input formControlName="placa" type="email" [ngModel]="veiculo.placa" class="form-control" id="ano">
+                </div>
+            </div>
+            <div class="col-md-12 mt-2" style="text-align: right;">
+                <button *ngIf="!habilitaEdicao" type="submit" name="btnAcao" class="btn btn-primary">Incluir</button>
+                <button *ngIf="habilitaEdicao" type="submit" class="btn btn-primary"
+                    style="margin-right: 2%;" id="atualizar" name="btnAcao" (click)="registrarAcao('atualizar')">Atualizar</button>
+                <button *ngIf="habilitaEdicao" type="submit" class="btn btn-primary" id="excluir" (click)="registrarAcao('excluir')" name="btnAcao">Excuir</button>
+            </div>
+        </form>
+    </div>
+</div>

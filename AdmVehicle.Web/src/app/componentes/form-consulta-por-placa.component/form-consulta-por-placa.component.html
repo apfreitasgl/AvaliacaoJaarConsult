@@ -1,0 +1,21 @@
+<app-form-veiculo [veiculos]="veiculos"></app-form-veiculo>
+<div class="col-md-6" *ngIf="!veiculos.length">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <form >
+                <div class="mb-3">
+                    <label for="placa" class="form-label">Placa</label>
+                    <input #placa type="text" class="form-control" id="placa">
+                </div>
+                <div class="col-md-12 mt-2" style="text-align: right;">
+                    <button (click)="consultarPelaPlaca(placa.value)" class="btn btn-primary">Consultar</button>
+                </div>
+            </form>
+        </div>
+       
+    </div>
+     
+</div>
+<div class="col-md-12 mt-2" style="text-align: right;">
+    <a href="/" class="btn btn-primary" >Voltar</a>
+</div>

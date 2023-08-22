@@ -13,34 +13,19 @@ export class VeiculoService {
   constructor(private http: HttpClient) { }
 
 
-  consultarDadosveiculo(codFipe: string, ano: number): Observable<Veiculo> {
-    return this.http.post<Veiculo>(environment.apiUrlV1 + `Vehicle/VehicleDetailsInFipeTableAsync?codeFipe=${codFipe}&yearVehicle=${ano}`,null);
+  consultarDadosVeiculo(codFipe: string, ano: number = 0): Observable<Veiculo> {
+    return this.http.post<Veiculo>(environment.apiUrlV1 + `Vehicle/VehicleDetailsInFipeTableAsync?codeFipe=${codFipe}&yearVehicle=${ano}`, null);
   }
-
-  
-
-
-
-
-  // get(id: number): Observable<Food> {
-  //   return this.http.get<Food>(environment.apiUrlV1 + `FoodProvider/Get?id=${id}`);
-  // }
-
-  // getList(): Observable<Food[]> {
-  //   return this.http.get<Food[]>(environment.apiUrlV1 + 'FoodProvider/GetList');
-  // }
-
-  // insert(foodForm: Food): Observable<Food> {
-  //   return this.http.post<Food>(environment.apiUrlV1 + 'FoodProvider/Insert', foodForm);
-  // }
-
-  // Vehicle?codeFipe=weqw&yearVehicle=0
-
-  // update(foodForm: Food): Observable<Food> {
-  //   return this.http.put<Food>(environment.apiUrlV1 + 'FoodProvider/Update', foodForm);
-  // }
-
-  // delete(id: number): Observable<Food> {
-  //   return this.http.delete<Food>(environment.apiUrlV1 + `FoodProvider/Delete?id=${id}`);
-  // }
+  inserirVeiculo(veiculo: Veiculo): Observable<Veiculo> {
+    return this.http.post<Veiculo>(environment.apiUrlV1 + 'Vehicle', veiculo);
+  }
+  consultarPelaPlaca(placa: string): Observable<Veiculo> {
+    return this.http.get<Veiculo>(environment.apiUrlV1 + `Vehicle/consultarPelaPlaca?placa=${placa}`);
+  }
+  atualizarVeiculo(veiculo: Veiculo): Observable<Veiculo> {
+    return this.http.put<Veiculo>(environment.apiUrlV1 + 'Vehicle/', veiculo);
+  }
+  excluirVeiculo(id: number): Observable<any> {
+    return this.http.delete<any>(environment.apiUrlV1 + `Vehicle/?id=${id}`);
+  }
 } 
