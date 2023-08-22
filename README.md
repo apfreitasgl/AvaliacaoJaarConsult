@@ -18,6 +18,7 @@
  	divida em varios projetos que tratem separadamente o Banco de dados, Injeção de dependência, API, etc;
   	- Pode-se colocar Fluent Validation para validarmos as entradas de Requisição
    	- Podemos customizar os retornos de forma a devolver status codes mais bem elaborados
+    	- Podemos usar Serilog para registrar os Logs de forma customizada e bem flexivel o que permitiria salvar estes em bancos de dados e disponibilizar para utilização em alicações como ElasticSearch, Kibana, etc
     
 # CONSIDERAÇÕES
 	- Foi optado por usar inglês na construção do software no inicio mas depois mudei e decidi usar português mesmo devido a API https://brasilapi.com.br usar português
